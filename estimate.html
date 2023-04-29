@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenThumb Landscaping</title>
+  <script src="estimate.js"></script>
+</head>
+<h1>ONLINE ESTIMATE</h1>
+<p>Have a landscaping idea but not sure where to start?</p>
+
+
+<p>You can get a decent idea of cost from our calculator,
+  just plug in your needs and generate a base price / estimate.</p>
+
+
+<p>RESIDENTIAL SERVICES PRICES</p>
+
+
+<p>Based off an average yard size of 10000 Square Feet, choose what you need done weekly, monthly or just one time!</p>
+
+<form id="estimateForm">
+  <label for="yardSize">Yard Size (in square feet):</label>
+  <input type="number" id="yardSize" name="yardSize" required><br><br>
+  
+  <label for="landscapeMaintenance">Landscape Maintenance (in hours per week):</label>
+  <input type="number" id="landscapeMaintenance" name="landscapeMaintenance"><br><br>
+  
+  <label for="treatmentFertilization">Treatment & Fertilization (per square foot):</label>
+  <input type="number" step="0.001" id="treatmentFertilization" name="treatmentFertilization"><br><br>
+  
+  <label for="lawnThatching">Lawn Thatching / Clean up (per square foot):</label>
+  <input type="number" step="0.004" id="lawnThatching" name="lawnThatching"><br><br>
+  
+  <label for="grassCutting">Grass Cutting (per square foot):</label>
+  <input type="number" step="0.004" id="grassCutting" name="grassCutting"><br><br>
+  
+  <label for="mulching">Mulching (per square foot):</label>
+  <input type="number" step="0.001" id="mulching" name="mulching"><br><br>
+  
+  <label for="seeding">Seeding (per square foot):</label>
+  <input type="number" step="0.007" id="seeding" name="seeding"><br><br>
+  
+  <label for="aeration">Aeration (per square foot):</label>
+  <input type="number" step="0.003" id="aeration" name="aeration"><br><br>
+  
+  <label for="treeInspections">Tree-Health Inspections (number of trees):</label>
+  <input type="number" id="treeInspections" name="treeInspections"><br><br>
+  
+  <label for="treeTrimming">Tree Trimming (number of trees):</label>
+  <input type="number" id="treeTrimming" name="treeTrimming"><br><br>
+  
+  <label for="shrubPruning">Shrub Pruning (in hours):</label>
+  <input type="number" id="shrubPruning" name="shrubPruning"><br><br>
+  
+  <label for="weedManagement">Weed Management (in hours):</label>
+  <input type="number" id="weedManagement" name="weedManagement"><br><br>
+  
+  <label for="treeRemoval">Tree Removal (number of trees):</label>
+  <input type="number" id="treeRemoval" name="treeRemoval"><br><br>
+  
+  <!-- <button type="submit">Get Estimate</button> -->
+
+  <button id="estimateBtn" type="submit">Get Estimate</button>
+</form>
+
+<p>Your estimate is:</p>
+
+<div id="estimateResult"></div>
+
+
+<style>/* Style for the header */
+  body {
+    background-image: url('https://images.unsplash.com/photo-1552083974-186346191183?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+  }
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+  
+  
+    p {
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+   
+    /* Style for the form */
+    form {
+      width: 80%;
+      margin: 0 auto;
+    }
+   
+    /* Style for the labels */
+    label {
+      display: block;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+   
+    /* Style for the input fields */
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+   
+    /* Style for the button */
+    button {
+      display: block;
+      width: 100%;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+   
+    /* Style for the result */
+    #total-cost {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    </style>

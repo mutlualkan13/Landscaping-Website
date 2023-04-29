@@ -1,0 +1,200 @@
+ /* Global Styles */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+  header {
+    background-color: #1d9445;
+    color: black;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+     position:relative;
+    
+  }
+  
+  
+  .logo {
+    width: 140px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  
+ 
+  nav {
+    margin-left: auto;
+  }
+
+  .hamburger {
+  display: none;
+  }
+ 
+  .desktop-nav {
+  display: flex;
+  align-items: center;
+  }
+ 
+  .desktop-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  }
+
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+ 
+  /* Slideshow Styles */
+  .slideshow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  }
+ 
+  .slideshow img {
+  display: none;
+  width: 100%;
+  }
+ 
+  .slideshow img:first-child {
+  display: block;
+  }
+ 
+  .prev,
+  .next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: -30px;
+  border: none;
+  background-color: rgba(30, 86, 49, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  }
+ 
+  .prev:hover,
+  .next:hover {
+  background-color: rgba(30, 86, 49, 0.8);
+  }
+ 
+   .prev {
+  left: 0;
+  }
+ 
+  .next {
+  right: 0;
+  } 
+ 
+  /* Hero Section Styles */
+  .hero {
+  background-color: #2d8059;
+  text-align: center;
+  padding: 50px;
+  }
+ 
+  .hero h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  }
+ 
+  .hero p{
+  font-size: 24px;
+  margin: 20px 0 0;
+  }
+
+  .hero a:hover {
+    background-color: #2c8449;
+    color: #ffffff;
+  }
+
+  /* Services Section Styles */
+  .services {
+  background-color: #1c6f27;
+  text-align: center;
+  padding: 50px;
+  }
+ 
+  .services h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  }
+ 
+  .services ul {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  }
+ 
+  .services li {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+ 
+  .services a {
+  display: block;
+  margin-top: 30px;
+  color: #1e5631;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #1e5631;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+ 
+  .services a:hover {
+  background-color: #2c8449;
+  color: #ffffff;
+  }
+ 
+  /* About Section Styles */
+  .about {
+  background-color: #448f6c;
+  text-align: center;
+  padding: 50px;
+  }
+ 
+  .about h2 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  }
+ 
+  .about p {
+  font-size: 24px;
+  margin: 30px 0 0;
+  }
+ 
+  .about a {
+    display: block;
+    margin-top: 30px;
+    color: #1e5631;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #1e5631;
+    padding: 10px;
+    }
+
+
+  .footer {
+    background-color: #17144a;
+    text-align: center;
+    padding: 50px;
+  }
+
+
+
+
